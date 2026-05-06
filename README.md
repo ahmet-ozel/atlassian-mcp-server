@@ -10,35 +10,18 @@ Jira + Confluence + Bitbucket Server/Data Center icin birlesik MCP sunucusu.
 ```bash
 git clone https://github.com/ahmet-ozel/atlassian-unified-mcp.git
 cd atlassian-unified-mcp
-```
-
-### 2. Kur (otomatik)
-
-```bash
-python install.py
-```
-
-Bu script:
-- Hangi Python calistiriyorsaniz ona bagimliliklari kurar
-- Sizden Jira/Confluence/Bitbucket URL ve token'larini ister
-- `.vscode/mcp.json` dosyasini otomatik olusturur (dogru Python yolu ile)
-
-Sonra:
-1. VS Code'da projeyi ac
-2. `.vscode/mcp.json` dosyasini ac → ustte **"Start"** butonuna tikla
-3. Copilot Chat → **Agent** modu → kullan
-
----
-
-## Manuel Kurulum (install.py kullanmadan)
-
-```bash
-git clone https://github.com/ahmet-ozel/atlassian-unified-mcp.git
-cd atlassian-unified-mcp
 pip install -e .
 ```
 
-Sonra `.vscode/mcp.json` olustur:
+> **ONEMLI:** `pip install` komutunu hangi Python environment'ta calistiriyorsaniz,
+> VS Code'un da ayni environment'i kullanmasi gerekir.
+> VS Code terminali hangi Python'u gosteriyorsa (`python --version`), o terminalde kurun.
+> Farkli env kullaniyorsaniz VS Code'da `Ctrl+Shift+P` → "Python: Select Interpreter" ile
+> paketin kurulu oldugu env'i secin.
+
+### 2. IDE config dosyasini olustur
+
+Projenin kok dizininde `.vscode/mcp.json` olustur:
 
 ```json
 {
@@ -246,7 +229,9 @@ Sonra `.vscode/mcp.json` olustur:
 
 ## Sorun Giderme
 
-**"ENOENT" hatasi**: `pip install` sonrasi script PATH'te degilse, config'de `"command": "python"` ve `"args": ["-m", "atlassian_unified_mcp"]` kullanin.
+**"No module named atlassian_unified_mcp" hatasi**: VS Code farkli bir Python environment kullaniyordur. `Ctrl+Shift+P` → "Python: Select Interpreter" ile `pip install` yaptiginiz env'i secin. Veya VS Code terminalinde `pip install -e .` tekrar calistirin.
+
+**"ENOENT" hatasi**: `python` komutu PATH'te degil. Config'de `"command": "python3"` veya `"command": "py"` deneyin.
 
 **SSL hatasi**: Self-signed sertifika kullaniyorsaniz `"SSL_VERIFY": "false"` ekleyin.
 
