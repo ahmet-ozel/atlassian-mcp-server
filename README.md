@@ -1,5 +1,10 @@
 # Atlassian Unified MCP Server
 
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://python.org)
+[![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-6E56CF)](https://modelcontextprotocol.io)
+[![Tools](https://img.shields.io/badge/Tools-61-brightgreen)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Jira + Confluence + Bitbucket Server/Data Center icin birlesik MCP sunucusu.
 **61 tool** — tek paket, tek config.
 

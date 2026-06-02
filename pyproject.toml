@@ -6,6 +6,7 @@ build-backend = "hatchling.build"
 name = "atlassian-unified-mcp"
 version = "1.0.0"
 description = "Birlesik Jira + Confluence + Bitbucket MCP sunucusu"
+license = "MIT"
 requires-python = ">=3.10"
 dependencies = [
     "mcp>=1.0.0",
