@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A unified MCP server for Jira + Confluence + Bitbucket Server/Data Center.
-**61 tools** — one package, one config.
+**61 tools** - one package, one config.
 
 ## Quick Setup (2 steps)
 
