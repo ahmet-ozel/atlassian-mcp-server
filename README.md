@@ -1,4 +1,4 @@
-# Atlassian Unified MCP Server
+﻿# Atlassian Unified MCP Server
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://python.org)
 [![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-6E56CF)](https://modelcontextprotocol.io)
@@ -13,8 +13,8 @@ A unified MCP server for Jira + Confluence + Bitbucket Server/Data Center.
 ### 1. Install
 
 ```bash
-git clone https://github.com/ahmet-ozel/atlassian-unified-mcp.git
-cd atlassian-unified-mcp
+git clone https://github.com/ahmet-ozel/atlassian-mcp-server.git
+cd atlassian-mcp-server
 pip install -e .
 ```
 
