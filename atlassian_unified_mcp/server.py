@@ -1,4 +1,4 @@
-"""Birlesik Atlassian MCP Sunucusu — Jira + Confluence + Bitbucket Server/DC.
+﻿"""Birlesik Atlassian MCP Sunucusu - Jira + Confluence + Bitbucket Server/DC.
 
 Tum Jira, Confluence ve Bitbucket Server/Data Center REST API tool'larini
 tek bir MCP sunucusu uzerinden sunar. IDE'ye (Kiro, Cursor, VS Code vb.)
