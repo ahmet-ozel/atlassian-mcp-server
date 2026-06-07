@@ -21,7 +21,7 @@ pip install -e .
 > **IMPORTANT:** Whichever Python environment you run `pip install` in,
 > VS Code must use the same environment.
 > Whatever Python the VS Code terminal points to (`python --version`), install in that terminal.
-> If you use a different env, in VS Code press `Ctrl+Shift+P` → "Python: Select Interpreter"
+> If you use a different env, in VS Code press `Ctrl+Shift+P`  "Python: Select Interpreter"
 > and choose the env where the package is installed.
 
 ### 2. Create the IDE config file
@@ -52,9 +52,9 @@ Create `.vscode/mcp.json` in the project root:
 
 ### 3. Restart the IDE
 
-- VS Code: `Ctrl+Shift+P` → "Reload Window"
-- Open `.vscode/mcp.json` → click the "Start" button at the top
-- Open Copilot Chat → select **Agent** mode → use it
+- VS Code: `Ctrl+Shift+P`  "Reload Window"
+- Open `.vscode/mcp.json`  click the "Start" button at the top
+- Open Copilot Chat  select **Agent** mode  use it
 
 ---
 
@@ -234,7 +234,7 @@ If you don't want to run `pip install`, provide the full path to the script in t
 
 ## Troubleshooting
 
-**"No module named atlassian_unified_mcp" error**: VS Code is using a different Python environment. Use `Ctrl+Shift+P` → "Python: Select Interpreter" to pick the env where you ran `pip install`. Or re-run `pip install -e .` in the VS Code terminal.
+**"No module named atlassian_unified_mcp" error**: VS Code is using a different Python environment. Use `Ctrl+Shift+P`  "Python: Select Interpreter" to pick the env where you ran `pip install`. Or re-run `pip install -e .` in the VS Code terminal.
 
 **"ENOENT" error**: The `python` command is not on PATH. Try `"command": "python3"` or `"command": "py"` in the config.
 
